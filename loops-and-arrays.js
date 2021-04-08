@@ -12,10 +12,18 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
+let log = "";
 for (let i = 0; i < names[0].length; i++) {
-
-    console.log(names[i] + "je");
+    log = [names[0] + "je", names[1] + "je", names[2] + "je", names[3] + "je"];
+    }
+{
+    console.log(log);
 }
+
+// onderstaande geeft de resultaten onder elkaar:
+// for (let i = 0; i < names[0].length; i++) {
+////     console.log(names[i] + "je");
+// }
 
 // ==========================================
 // Opdracht 2
@@ -54,8 +62,18 @@ const squares = [30, 2, 8, 24, 11];
 // console.log(numbers) geeft: [27000, 8, 512, 13824, 1331];
 
 console.log(squares);
-let script = "";
+let numbersTwo = "";
 for (let i = 0; i < squares.length; i++) {
-    script = squares[i] * squares[i] * squares[i];
-    console.log(script);
+    numbersTwo = squares[i] * squares[i] * squares[i];
+    console.log(numbersTwo);
 }
+
+// achter elkaar zonder komma's:
+// console.log(squares);
+// let numbersTwo = "";
+// for (let i = 0; i < squares.length; i++) {
+//     numbersTwo = numbersTwo + (squares[i] * squares[i] * squares[i]);
+//     }
+// {
+//     console.log([numbersTwo]);
+// }
