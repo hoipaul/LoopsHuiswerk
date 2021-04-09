@@ -40,10 +40,14 @@ const numbers = [2, 4, 5, 29, 38];
 // console.log(numbers) geeft: [ 6, 12, 15, 87, 114 ];
 
 console.log(numbers);
+
 let output = "";
 for (let i = 0; i < numbers.length; i++) {
     output = numbers[i] * 3;
-    console.log(output);
+    numbers[i] = output;
+}
+{
+    console.log(numbers);
 }
 
 // ==========================================
@@ -55,7 +59,7 @@ for (let i = 0; i < numbers.length; i++) {
 
 const squares = [30, 2, 8, 24, 11];
 
-// Verwachtte uitkomsten:
+// Verwachte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [30, 2, 8, 24, 11];
 // Na jouw script zie je de aangepaste waardes:
@@ -65,15 +69,7 @@ console.log(squares);
 let numbersTwo = "";
 for (let i = 0; i < squares.length; i++) {
     numbersTwo = squares[i] * squares[i] * squares[i];
-    console.log(numbersTwo);
+    squares[i] = numbersTwo;
+}{
+    console.log(squares);
 }
-
-// achter elkaar zonder komma's:
-// console.log(squares);
-// let numbersTwo = "";
-// for (let i = 0; i < squares.length; i++) {
-//     numbersTwo = numbersTwo + (squares[i] * squares[i] * squares[i]);
-//     }
-// {
-//     console.log([numbersTwo]);
-// }
