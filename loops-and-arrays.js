@@ -41,10 +41,8 @@ const numbers = [2, 4, 5, 29, 38];
 
 console.log(numbers);
 
-let output = "";
 for (let i = 0; i < numbers.length; i++) {
-    output = numbers[i] * 3;
-    numbers[i] = output;
+    numbers[i] = numbers[i] * 3;
 }
 {
     console.log(numbers);
@@ -66,10 +64,9 @@ const squares = [30, 2, 8, 24, 11];
 // console.log(numbers) geeft: [27000, 8, 512, 13824, 1331];
 
 console.log(squares);
-let numbersTwo = "";
+
 for (let i = 0; i < squares.length; i++) {
-    numbersTwo = squares[i] * squares[i] * squares[i];
-    squares[i] = numbersTwo;
+    squares[i] = squares[i] * squares[i] * squares[i];
 }{
     console.log(squares);
 }
